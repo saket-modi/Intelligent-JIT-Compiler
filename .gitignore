@@ -2,3 +2,7 @@
 /docs/
 input.ll
 output.txt
+.venv
+.vscode
+/ToyVM/
+execution_trace.csv
