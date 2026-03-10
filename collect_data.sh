@@ -1,4 +1,12 @@
 #!/bin/bash
+# Stop the script immediately if any command fails
+set -e
+
+echo "[*] Cleaning and building project..."
+make clean
+make all
+
+echo "[*] Build successful. Starting data collection..."
 
 # Configuration
 TEST_FILES=("simple_loop.cpp" "step_loop.cpp" "nested_loop.cpp")
